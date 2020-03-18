@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="main.css">
+  <title>Web Educacional</title>
+</head>
+
+<body>
+  <section id="header">
+    <div class="container">
+      <img src="img/logo2.png" class="logo" alt="logo empresa">
+      <div class="header-text">
+        <h1>El propósito es enseñar,<br> acercar el aprendizaje a las personas</h1>
+        <span class="square"></span>
+        <p>Hay muchas formas y lugares para aprender, el mundo tecnológico de hoy en día necesita de ti y tu potencial,
+          despliégalo aquí con los mejores tutores y la mejor calidad en cursos online, no esperes más!</p>
+        <button class="common-btn">Leer más...</button>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <nav id="sideNav">
+    <ul>
+      <li><a href="#">INICIO</a></li>
+      <li><a href="#">NOSOTROS</a></li>
+      <li><a href="#">PLANES</a></li>
+      <li><a href="#">CURSOS</a></li>
+      <li><a href="#">OFERTAS</a></li>
+      <li><a href="#">CONTACTO</a></li>
+    </ul>
+  </nav>
+  <img src="img/menu.png" id="menuBtn" alt="menu">
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left-col">
+      <img src="img/about.png" alt="about">
+    </div>
+    <div class="about-right-col">
+      <div class="about-text">
+        <h1>Sobre Nosotros</h1>
+        <span class="square"></span>
+        <p>Somos una Academia con larga trayectoria ya, totalmente comprometida con la educación online y también en la formación humana de nuestros alumnos. Con la misión de entregar al mundo profesionales altamente capacitados y buenos ciudadanos, lo apostamos todo.</p><br><br>
+        <div class="line">
+          <span class="line-1"></span><br>
+          <span class="line-2"></span><br>
+          <span class="line-3"></span>
+        </div>
+        <h2>El aprendizaje no se alcanza por casualidad, se debe buscar con ardor y atender con diligencia</h2>
+        <h3>------ Abigail Adams</h3>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <script>
+    let menuBtn = document.getElementById('menuBtn')
+    let sideNav = document.getElementById('sideNav')
+
+    sideNav.style.right = '-250px'
+    menuBtn.addEventListener('click', () => {
+      if (sideNav.style.right == '-250px') {
+        sideNav.style.right = '0'
+      } else {
+        sideNav.style.right = '-250px'
+      }
+    })
+  </script>
+
+</body>
+
+</html>
